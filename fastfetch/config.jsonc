@@ -1,0 +1,144 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+
+  "logo": {
+    "source": "~/.config/fastfetch/ascii.txt",
+  },
+
+  "display": {
+    "disableLinewrap": true,
+    "freq": {
+      "ndigits": 1,
+    },
+    "size": {
+      "ndigits": 1,
+    },
+
+    "separator": " ➜ ",
+    "key": {
+      "width": 18
+    }
+  },
+
+  "modules": [
+    {
+      "type": "custom",
+      "format": "\u001b[1;35m╭──────────────────────────────── SYSTEM ────────────────────────────────╮\u001b[0m"
+    },
+
+    {
+      "type": "cpu",
+      "key": " CPU",
+      "keyColor": "magenta"
+    },
+
+    {
+      "type": "gpu",
+      "key": "󰢮 GPU",
+      "keyColor": "magenta"
+    },
+
+    {
+      "type": "memory",
+      "key": "󰍛 Memory",
+      "keyColor": "magenta"
+    },
+
+    {
+      "type": "battery",
+      "key": " Battery",
+      "keyColor": "magenta"
+    },
+
+    {
+      "type": "custom",
+      "format": "\u001b[1;35m╰────────────────────────────────────────────────────────────────────────╯\u001b[0m"
+    },
+
+    {
+      "type": "custom",
+      "format": "\u001b[1;34m╭─────────────────────────────── STORAGE ────────────────────────────────╮\u001b[0m"
+    },
+
+    {
+      "type": "disk",
+      "key": "󰋊 Disk",
+      "keyColor": "blue",
+      "format": "{size-used} / {size-total} ({size-percentage})"
+    },
+
+    {
+      "type": "swap",
+      "key": "󰾴 Swap",
+      "keyColor": "blue"
+    },
+
+    {
+      "type": "custom",
+      "format": "\u001b[1;34m╰────────────────────────────────────────────────────────────────────────╯\u001b[0m"
+    },
+
+    {
+      "type": "custom",
+      "format": "\u001b[1;32m╭─────────────────────────────── NETWORK ────────────────────────────────╮\u001b[0m"
+    },
+
+    {
+      "type": "localip",
+      "key": " Ip Address",
+      "keyColor": "green"
+    },
+
+    {
+      "type": "wifi",
+      "key": " Wifi",
+      "keyColor": "green",
+      "format": "{SSID} ({signal-quality}) {band} GHz"
+    },
+
+    {
+      "type": "custom",
+      "format": "\u001b[1;32m╰────────────────────────────────────────────────────────────────────────╯\u001b[0m"
+    },
+
+    {
+      "type": "custom",
+      "format": "\u001b[1;36m╭─────────────────────────────── SESSION ────────────────────────────────╮\u001b[0m"
+    },
+
+    {
+      "type": "uptime",
+      "key": "󰅐 Uptime",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "packages",
+      "key": "󰏖 Packages",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "shell",
+      "key": " Shell",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "terminal",
+      "key": " Terminal",
+      "keyColor": "cyan"
+    },
+
+    {
+      "type": "custom",
+      "format": "\u001b[1;36m╰────────────────────────────────────────────────────────────────────────╯\u001b[0m"
+    },
+
+
+    "break",
+
+    {
+      "type": "colors",
+      "symbol": "circle",
+      "paddingLeft": 3
+    },
+  ]
+}
